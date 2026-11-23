@@ -1,14 +1,14 @@
-# 🏆 OpenSlava — Final Challenge
+# 🏆 STU FEI — Final Challenge
 
-**Open build · No time limit · First 3 to submit win a prize**
+**Open build · Optional · Self-paced — try it at home**
 
 ---
 
 ## The Challenge
 
-You have spent the last 90 minutes learning every dimension of IBM Bob — modes, `/init`, rules, custom modes, MCP, GitHub automation, and security auditing. Now put it all together in one coherent product, built entirely with Bob.
+This challenge is for those who want to go further on their own. It combines everything covered in the tracks — modes, `/init`, rules, custom modes, MCP, GitHub automation, and security auditing — in one coherent product, built entirely with Bob. Nobody checks it: it is a self-guided exercise, and you can do as much or as little of it as you like.
 
-**The first three participants to submit a passing pull request win a prize.**
+**You are done when all items in the self-check list below are ticked.**
 
 ---
 
@@ -46,17 +46,17 @@ PocketLedger helps individuals track income and expenses. Users add transactions
 
 ## Bob Requirements
 
-This is not just an application challenge — it is a **Bob workflow** challenge. Your submission must demonstrate that you used Bob correctly and completely. The following Bob artefacts are **required** and will be checked by the judges.
+This is not just an application challenge — it is a **Bob workflow** challenge. Your result should demonstrate that you used Bob correctly and completely. The following Bob artefacts are the goal of the challenge.
 
 !!! info "Why are Bob artefacts required?"
-    The challenge is designed to test whether you can apply the **full Bob development workflow**, not just generate code quickly. Judges are looking for evidence that you:
+    The challenge is designed to let you practise the **full Bob development workflow**, not just generate code quickly. The self-check list at the end looks for evidence that you:
 
     - Used `/init` to give Bob persistent project context
     - Created rules to enforce standards automatically (not just as prompts)
     - Built a custom mode with appropriate permission restrictions
     - Drove the full GitHub SDLC loop with MCP
 
-    A working app with no Bob artefacts scores zero. An app that demonstrates every Bob pattern — even if imperfect — scores high.
+    A working app with no Bob artefacts misses the point of the challenge. An app that demonstrates every Bob pattern — even if imperfect — achieves it.
 
 ### B-REQ-1 — `/init` generated `AGENTS.md`
 
@@ -70,7 +70,7 @@ Run `/init` on the completed codebase. The `AGENTS.md` at the repo root must exi
 !!! tip "When to run `/init`"
     Run `/init` **after** the project skeleton is in place — not on an empty folder. Then re-run it after you add a new module (e.g. when you add authentication). Each re-run refreshes Bob's map of the codebase.
 
-    You can also manually add constraints to `AGENTS.md` that Bob couldn't infer from the code: deployment notes, known limitations, team conventions. The judges will reward a well-curated `AGENTS.md`.
+    You can also manually add constraints to `AGENTS.md` that Bob couldn't infer from the code: deployment notes, known limitations, team conventions. A well-curated `AGENTS.md` is a sign of a good result.
 
 ### B-REQ-2 — Team rules file
 
@@ -140,13 +140,9 @@ The PR must exist on GitHub and must reference the issue. The CSV export endpoin
 
 ---
 
-## Submission
+## Self-check
 
-### How to submit
-
-When you are done, **call over a facilitator** — they will check your screen live.
-
-### What the facilitator will check
+There is no submission and nobody grades this challenge. Use the table below to check your own result when you are done.
 
 | Check | Pass criteria |
 |---|---|
@@ -159,15 +155,13 @@ When you are done, **call over a facilitator** — they will check your screen l
 | GitHub PR references the issue | PR description contains `#<issue-number>` |
 | Tests pass | `pytest` exits 0 in the backend directory |
 
-### Scoring tiebreaker
-
-If multiple submissions arrive at the same time, the tiebreaker is quality of `AGENTS.md` — specifically how well Bob was guided to capture the real architectural decisions of the project.
+The quality of `AGENTS.md` is the best indicator of a strong result — specifically how well Bob was guided to capture the real architectural decisions of the project.
 
 ---
 
 ## Recommended workflow
 
-Following the patterns you learned in the tracks will get you to a submission faster than guessing. Here is the recommended sequence:
+Following the patterns you learned in the tracks will get you to the goal faster than guessing. Here is the recommended sequence:
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1a56db', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#1a56db', 'lineColor': '#6b7280', 'mainBkg': '#1a56db', 'nodeBorder': '#1a56db', 'clusterBkg': '#1e3a5f', 'titleColor': '#ffffff', 'edgeLabelBackground': 'transparent'}}}%%
@@ -232,7 +226,7 @@ These hints are here if you get stuck. Try without them first.
     The Plan → new task → Agent pattern is particularly important here because the chart logic is complex enough to benefit from a design pass.
 
 ??? tip "Hint 4 — start.sh template"
-    Your repo should include a `start.sh` at the root that starts both services so judges can run it easily:
+    Your repo should include a `start.sh` at the root that starts both services so anyone can run it easily:
     ```bash
     #!/usr/bin/env bash
     set -e
@@ -263,9 +257,5 @@ These hints are here if you get stuck. Try without them first.
     Clean context is the single most effective fix for drift. Don't try to correct Bob in a long conversation — reset and start fresh.
 
 ---
-
-## Prize
-
-The **first 3 participants** to submit a passing pull request receive an IBM Bob prize. 🏆
 
 Good luck — and enjoy building with Bob.

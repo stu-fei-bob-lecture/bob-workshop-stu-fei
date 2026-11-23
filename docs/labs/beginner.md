@@ -1,4 +1,4 @@
-# OpenSlava — Beginner Track
+# STU FEI — Beginner Track
 
 Three labs · ~70 minutes total · No prior Bob experience needed
 
@@ -8,7 +8,7 @@ Three labs · ~70 minutes total · No prior Bob experience needed
 
 | # | Lab | Time | Goal |
 |---|---|---|---|
-| B1 | **Explore Modes & Build the OpenSlava 2026 Welcome App** | 25 min | Learn the three Bob modes by building a confetti welcome page |
+| B1 | **Explore Modes & Build the STU FEI Welcome App** | 25 min | Learn the three Bob modes by building a confetti welcome page |
 | B2 | **Connect & Expand Galaxium Travels: Flights with Layovers** | 25 min | Add a real feature to a full-stack app using Ask → Plan → Agent |
 | B3 | **Date Picker, Price Ranker & Booking Agent** | 20 min | Three quick enhancements showing Bob handling UI, logic, and mock AI |
 
@@ -26,7 +26,7 @@ Three labs · ~70 minutes total · No prior Bob experience needed
 
 ---
 
-## Lab B1 — Explore Modes & Build the OpenSlava 2026 Welcome App
+## Lab B1 — Explore Modes & Build the STU FEI Welcome App
 
 **25 minutes** · No code experience needed
 
@@ -75,10 +75,10 @@ Ask mode is read-only by design — perfect for questions and exploration.
 2. Send this prompt:
 
 ```
-Plan a React + Vite app called "OpenSlava 2026 Welcome".
+Plan a React + Vite app called "STU FEI Welcome".
 It should show a full-screen welcome page with:
 - Background colour IBM Bob blue (#0f62fe)
-- White text: "Welcome to OpenSlava 2026"
+- White text: "Welcome to STU FEI"
 - Subtitle: "Powered by IBM Bob"
 - A confetti burst when the page loads
 
@@ -362,5 +362,5 @@ Implement the BookingAgent component you just planned.
 
 | If you want to go deeper… | Try |
 |---|---|
-| Team standards and SDLC automation | [Intermediate Track](openslava-intermediate.md) |
-| Custom modes, MCP, and advanced Bob config | [Expert Track](openslava-expert.md) |
+| Team standards and SDLC automation | [Intermediate Track](intermediate.md) |
+| Custom modes, MCP, and advanced Bob config | [Expert Track](expert.md) |

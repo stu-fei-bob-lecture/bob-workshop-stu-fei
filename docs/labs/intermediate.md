@@ -1,4 +1,4 @@
-# OpenSlava — Intermediate Track
+# STU FEI — Intermediate Track
 
 Two labs · ~70 minutes total · Assumes basic Bob familiarity
 
@@ -445,4 +445,4 @@ Close and reopen **IBM Bob**, then ask Bob something simple in Agent mode. Check
 
 | If you want to go deeper… | Try |
 |---|---|
-| Custom modes, MCP, fintech audit, GitHub MCP E2E | [Expert Track](openslava-expert.md) |
+| Custom modes, MCP, fintech audit, GitHub MCP E2E | [Expert Track](expert.md) |

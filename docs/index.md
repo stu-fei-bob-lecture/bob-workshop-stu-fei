@@ -1,6 +1,14 @@
-# IBM Bob — STU FEI Workshop
+# IBM Bob — STU FEI Lecture
 
-Welcome to the **IBM Bob Hands-On Workshop** at STU FEI! This is your complete guide — choose a track, follow the step-by-step instructions, and build real applications with IBM Bob.
+Welcome to the **IBM Bob Hands-On Lecture** at STU FEI! This is your complete guide — choose a track, follow the step-by-step instructions, and build real applications with IBM Bob.
+
+## Lecture format (90 minutes)
+
+| Part | What happens |
+|---|---|
+| Lecture | Introduction to IBM Bob |
+| Hands-on lab (optional) | The instructor picks one lab from the tracks below and walks through it together with the room, answering your questions along the way. |
+| Afterwards (optional) | Continue with the remaining labs at home at your own pace. |
 
 ---
 
@@ -8,47 +16,41 @@ Welcome to the **IBM Bob Hands-On Workshop** at STU FEI! This is your complete g
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-circle:{ .lg .middle } __[🟢 Beginner](labs/openslava-beginner.md)__
+-   :material-numeric-1-circle:{ .lg .middle } __🟢 Beginner__
 
     ---
 
-    **~70 min · 3 labs · No prior Bob experience needed**
+    **3 labs · No prior Bob experience needed**
 
     Build a confetti welcome app, add layover support to a full-stack travel app, then wire up date pickers and a mock AI booking agent — touching **Ask**, **Plan**, and **Agent** modes throughout.
 
-    [:octicons-arrow-right-24: Start Beginner Track](labs/openslava-beginner.md)
-
--   :material-numeric-2-circle:{ .lg .middle } __[🟡 Intermediate](labs/openslava-intermediate.md)__
+-   :material-numeric-2-circle:{ .lg .middle } __🟡 Intermediate__
 
     ---
 
-    **~70 min · 2 labs · Basic Bob familiarity assumed**
+    **2 labs · Basic Bob familiarity assumed**
 
     Drive a full **Issue → Branch → Code → PR** loop with GitHub MCP, then author and commit version-controlled team rules that Bob applies automatically on every interaction.
 
-    [:octicons-arrow-right-24: Start Intermediate Track](labs/openslava-intermediate.md)
-
--   :material-numeric-3-circle:{ .lg .middle } __[🔴 Expert](labs/openslava-expert.md)__
+-   :material-numeric-3-circle:{ .lg .middle } __🔴 Expert__
 
     ---
 
-    **~90 min · 4 labs · For power users and architects**
+    **4 labs · For power users and architects**
 
     Discover a banking-industry codebase, build a React UI, run a security audit, author fintech compliance rules, create a custom scoped mode, and automate the full SDLC with GitHub MCP.
 
-    [:octicons-arrow-right-24: Start Expert Track](labs/openslava-expert.md)
-
--   :material-trophy:{ .lg .middle } __[🏆 Challenge](labs/openslava-challenge.md)__
+-   :material-trophy:{ .lg .middle } __🏆 Challenge__
 
     ---
 
-    **Open build · First 3 to finish win a prize**
+    **Open build · Optional · Self-paced, at home**
 
-    Build **PocketLedger** — a full-stack personal finance tracker — using every Bob skill you've learned: `/init`, rules, a custom mode, and a complete GitHub issue-to-PR loop. All Bob artefacts are judged.
-
-    [:octicons-arrow-right-24: Take the Challenge](labs/openslava-challenge.md)
+    Build **PocketLedger** — a full-stack personal finance tracker — using every Bob skill you've learned: `/init`, rules, a custom mode, and a complete GitHub issue-to-PR loop. Nobody grades it; use the built-in self-check list.
 
 </div>
+
+!!! info "Labs will be available during the lecture"
 
 ---
 
@@ -64,50 +66,6 @@ flowchart LR
     classDef node fill:#1a56db,color:#fff,stroke:#1a56db
     class Ask,Plan,Agent,Custom node
 ```
-
----
-
-## Prerequisites & Setup
-
-### 1 — Get an IBMid
-
-IBM Bob requires an IBMid. **IBMid is free** — create one at [ibm.com/account/reg](https://www.ibm.com/account/reg/us-en/signup?formid=urx-19776) (takes ~2 minutes). If you already have one, skip this step.
-
-### 2 — Install IBM Bob
-
-IBM Bob is a **standalone IDE** — not a VS Code extension. Download from [bob.ibm.com/download](https://bob.ibm.com/download) and sign in with your IBMid.
-
-=== "IBM Bob IDE (recommended)"
-    Download the installer for your OS from **[bob.ibm.com/download](https://bob.ibm.com/download)**:
-
-    | OS | Installer |
-    |---|---|
-    | macOS (Apple Silicon) | `.pkg` — mac-ARM |
-    | macOS (Intel) | `.pkg` — mac-intel |
-    | Windows | `.exe` |
-    | Linux (Debian/Ubuntu) | `.deb` |
-    | Linux (Red Hat/Fedora) | `.rpm` |
-
-    Run the installer, follow the wizard, then sign in with your **IBMid** on first launch.
-
-=== "Bob Shell (terminal)"
-    Prefer the terminal? Install Bob Shell instead:
-
-    **macOS / Linux**
-    ```bash
-    curl -fsSL https://bob.ibm.com/download/bobshell.sh | bash
-    ```
-    **Windows (PowerShell)**
-    ```powershell
-    powershell -ep Bypass 'irm -Uri "https://bob.ibm.com/download/bobshell.ps1" | iex'
-    ```
-    Authenticate at `bob.ibm.com/login` when prompted.
-
-### 3 — Other prerequisites
-
-- **Node.js 20 LTS** and **Python 3.11+** installed
-- **Git** configured with `user.name` and `user.email`
-- **Galaxium Travels** available at `galaxium-travels/` — already included in the workshop repo, no separate clone needed *(Beginner / Intermediate tracks)*
 
 ---
 
