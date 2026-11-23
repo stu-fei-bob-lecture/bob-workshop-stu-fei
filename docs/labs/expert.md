@@ -44,7 +44,7 @@ The three parts map directly to three Bob modes and three patterns you should ca
 **1 — Clone the workshop repo** (skip if you already have it)
 
 ```bash
-git clone https://github.com/potapov-dmytro/bob-workshop-stu-fei.git
+git clone https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
 cd bob-workshop-stu-fei
 ```
 
