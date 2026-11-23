@@ -28,3 +28,5 @@ galaxium-travels/booking_system_inventory_hold_service/target/
 
 # MkDocs
 site/
+
+.vscode/

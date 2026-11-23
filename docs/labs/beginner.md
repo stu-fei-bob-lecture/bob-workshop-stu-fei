@@ -54,9 +54,10 @@ Using the right mode for each phase keeps Bob's actions **predictable, reviewabl
 
 ### Step 1 — Ask mode: understand the modes
 
-1. Open **IBM Bob** on an **empty folder**
-2. Select **Ask** mode
-3. Send this prompt:
+1. Create a new empty folder on your computer (e.g. `stu-fei-welcome`)
+2. Launch **IBM Bob**, then open that folder as your project (**File → Open Folder…**, select the folder)
+3. Select **Ask** mode
+4. Send this prompt:
 
 ```
 What are the three built-in Bob modes, what tools does each one permit,
@@ -164,14 +165,27 @@ Large language models are **stateless** — each new conversation starts with ze
 
 - [ ] Lab B1 complete (modes understood)
 - [ ] Python 3.8+ installed
-- [ ] Galaxium Travels available at `galaxium-travels/` (already included — no separate clone needed)
+- [ ] Git installed and configured — see [Setup (Príprava)](../setup.md#4-other-prerequisites)
 
-### Step 1 — Open and start
+### Step 1 — Open the project and start the app
+
+1. Clone the workshop repo (skip if you already have it): [github.com/stu-fei-bob-lecture/bob-workshop-stu-fei](https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei)
+
+    ```bash
+    git clone --recurse-submodules https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
+    ```
+
+    `galaxium-travels/` is a git submodule, so `--recurse-submodules` is required — without it the folder will be empty. If you already cloned without it, run `git submodule update --init` inside the repo.
+
+2. In **IBM Bob**, open the `galaxium-travels/` folder from the cloned repo (`bob-workshop-stu-fei/galaxium-travels`) as your project (**File → Open Folder…**)
+3. Open the built-in terminal (**Terminal → New Terminal**) — it starts inside `galaxium-travels/`
+4. Run:
 
 ```bash
-cd galaxium-travels
 ./start.sh
 ```
+
+Keep this terminal open — it runs the servers. Use a second terminal for anything else.
 
 Open `http://localhost:5173` — you should see the Galaxium flight booking UI.
 
@@ -180,7 +194,7 @@ Open `http://localhost:5173` — you should see the Galaxium flight booking UI.
 
 ### Step 2 — Run `/init`
 
-1. Open the `galaxium-travels/` folder in **IBM Bob**
+1. Make sure `bob-workshop-stu-fei/galaxium-travels` is still the folder open in **IBM Bob** (from Step 1)
 2. Switch to **Agent** mode
 3. Type `/init` and send
 

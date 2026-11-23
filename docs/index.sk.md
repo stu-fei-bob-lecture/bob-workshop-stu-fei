@@ -2,13 +2,16 @@
 
 Vitajte na praktickej prednáške **IBM Bob** na STU FEI! Toto je váš kompletný sprievodca — vyberte si úroveň, postupujte podľa podrobných inštrukcií a vytvorte reálne aplikácie s pomocou IBM Bob.
 
+!!! tip "Pred prednáškou"
+    Budeme radi, ak si pred prednáškou nájdete chvíľku a prejdete stránku [Príprava](setup.md). Ďakujeme!
+
 ## Priebeh prednášky (90 minút)
 
-| Časť | Čo sa deje |
-|---|---|
-| Prednáška | Úvod do IBM Bob |
-| Praktické cvičenie (voliteľné) | Vyučujúci vyberie jeden lab z úrovní nižšie a prejde ho spoločne s poslucháčmi, pričom priebežne odpovedá na otázky. |
-| Potom (voliteľné) | Pokračujte ďalšími labmi doma vlastným tempom. |
+| Časť | Čas | Čo sa deje |
+|---|---|---|
+| Prednáška | cca 30 min | Úvod do IBM Bob |
+| Praktická časť (voliteľné) | cca 60 min | Spoločne začneme prvým labom z úrovne 🟢 Beginner. V ostatných môžete pokračovať vlastným tempom — otázky sú vítané. |
+| Potom (voliteľné) | samostatne | Zvyšné laby môžete dokončiť doma. |
 
 ---
 
@@ -16,7 +19,7 @@ Vitajte na praktickej prednáške **IBM Bob** na STU FEI! Toto je váš kompletn
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-circle:{ .lg .middle } __🟢 Začiatočník__
+-   :material-numeric-1-circle:{ .lg .middle } __[🟢 Beginner](labs/beginner.md)__
 
     ---
 
@@ -24,37 +27,43 @@ Vitajte na praktickej prednáške **IBM Bob** na STU FEI! Toto je váš kompletn
 
     Vytvorte aplikáciu s konfetami, pridajte podporu medzipristátí do full-stack cestovnej aplikácie a integrujte výber dátumov spolu s mock AI rezervačným agentom — vyskúšate si režimy **Ask**, **Plan** a **Agent**.
 
--   :material-numeric-2-circle:{ .lg .middle } __🟡 Pokročilý__
+    [:octicons-arrow-right-24: Začať úroveň Beginner](labs/beginner.md)
+
+-   :material-numeric-2-circle:{ .lg .middle } __[🟡 Intermediate](labs/intermediate.md)__
 
     ---
 
-    **2 laby · Predpokladá sa základná znalosť Boba**
+    **2 laby · Predpokladá sa základná znalosť Boba · Inštrukcie v angličtine**
 
     Prejdite si kompletný cyklus **Issue → Vetva → Kód → PR** pomocou GitHub MCP, potom vytvorte a commitnite verzované tímové pravidlá, ktoré Bob automaticky uplatňuje pri každej interakcii.
 
--   :material-numeric-3-circle:{ .lg .middle } __🔴 Expert__
+    [:octicons-arrow-right-24: Začať úroveň Intermediate](labs/intermediate.md)
+
+-   :material-numeric-3-circle:{ .lg .middle } __[🔴 Expert](labs/expert.md)__
 
     ---
 
-    **4 laby · Pre pokročilých používateľov a architektov**
+    **4 laby · Pre pokročilých používateľov a architektov · Inštrukcie v angličtine**
 
     Preskúmajte kódovú bázu bankového systému, vytvorte React UI, vykonajte bezpečnostný audit, napíšte pravidlá pre fintech compliance, vytvorte vlastný špecializovaný režim a automatizujte celý SDLC cez GitHub MCP.
 
--   :material-trophy:{ .lg .middle } __🏆 Výzva__
+    [:octicons-arrow-right-24: Začať úroveň Expert](labs/expert.md)
+
+-   :material-trophy:{ .lg .middle } __[🏆 Challenge](labs/challenge.md)__
 
     ---
 
-    **Otvorený vývoj · Voliteľné · Vlastným tempom, doma**
+    **Otvorený vývoj · Voliteľné · Vlastným tempom, doma · Inštrukcie v angličtine**
 
-    Vytvorte **PocketLedger** — full-stack aplikáciu na sledovanie osobných financií — s využitím všetkých schopností Boba, ktoré ste sa naučili: `/init`, pravidlá, vlastný režim a kompletný GitHub issue-to-PR cyklus. Nikto ho nehodnotí; použite zabudovaný zoznam na samokontrolu.
+    Vytvorte **PocketLedger** — full-stack aplikáciu na sledovanie osobných financií — s využitím všetkých schopností Boba, ktoré ste sa naučili: `/init`, pravidlá, vlastný režim a kompletný GitHub issue-to-PR cyklus.
+
+    [:octicons-arrow-right-24: Prijať challenge](labs/challenge.md)
 
 </div>
 
-!!! info "Laby budú dostupné počas prednášky"
-
 ---
 
-## Režimy IBM Bob v skratke
+## Prehľad režimov IBM Bob
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1a56db', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#1a56db', 'lineColor': '#6b7280', 'mainBkg': '#1a56db', 'nodeBorder': '#1a56db', 'clusterBkg': '#1e3a5f', 'titleColor': '#ffffff', 'edgeLabelBackground': 'transparent'}}}%%

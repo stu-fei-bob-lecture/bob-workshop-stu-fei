@@ -4,11 +4,11 @@ Welcome to the **IBM Bob Hands-On Lecture** at STU FEI! This is your complete gu
 
 ## Lecture format (90 minutes)
 
-| Part | What happens |
-|---|---|
-| Lecture | Introduction to IBM Bob |
-| Hands-on lab (optional) | The instructor picks one lab from the tracks below and walks through it together with the room, answering your questions along the way. |
-| Afterwards (optional) | Continue with the remaining labs at home at your own pace. |
+| Part | Time | What happens |
+|---|---|---|
+| Lecture | ~30 min | Introduction to IBM Bob |
+| Hands-on part (optional) | ~60 min | We start together with the first lab of the 🟢 Beginner track. You can continue with the rest at your own pace — questions are welcome. |
+| Afterwards (optional) | on your own | You can finish the remaining labs at home. |
 
 ---
 
@@ -16,7 +16,7 @@ Welcome to the **IBM Bob Hands-On Lecture** at STU FEI! This is your complete gu
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-circle:{ .lg .middle } __🟢 Beginner__
+-   :material-numeric-1-circle:{ .lg .middle } __[🟢 Beginner](labs/beginner.md)__
 
     ---
 
@@ -24,7 +24,9 @@ Welcome to the **IBM Bob Hands-On Lecture** at STU FEI! This is your complete gu
 
     Build a confetti welcome app, add layover support to a full-stack travel app, then wire up date pickers and a mock AI booking agent — touching **Ask**, **Plan**, and **Agent** modes throughout.
 
--   :material-numeric-2-circle:{ .lg .middle } __🟡 Intermediate__
+    [:octicons-arrow-right-24: Start Beginner Track](labs/beginner.md)
+
+-   :material-numeric-2-circle:{ .lg .middle } __[🟡 Intermediate](labs/intermediate.md)__
 
     ---
 
@@ -32,7 +34,9 @@ Welcome to the **IBM Bob Hands-On Lecture** at STU FEI! This is your complete gu
 
     Drive a full **Issue → Branch → Code → PR** loop with GitHub MCP, then author and commit version-controlled team rules that Bob applies automatically on every interaction.
 
--   :material-numeric-3-circle:{ .lg .middle } __🔴 Expert__
+    [:octicons-arrow-right-24: Start Intermediate Track](labs/intermediate.md)
+
+-   :material-numeric-3-circle:{ .lg .middle } __[🔴 Expert](labs/expert.md)__
 
     ---
 
@@ -40,17 +44,19 @@ Welcome to the **IBM Bob Hands-On Lecture** at STU FEI! This is your complete gu
 
     Discover a banking-industry codebase, build a React UI, run a security audit, author fintech compliance rules, create a custom scoped mode, and automate the full SDLC with GitHub MCP.
 
--   :material-trophy:{ .lg .middle } __🏆 Challenge__
+    [:octicons-arrow-right-24: Start Expert Track](labs/expert.md)
+
+-   :material-trophy:{ .lg .middle } __[🏆 Challenge](labs/challenge.md)__
 
     ---
 
     **Open build · Optional · Self-paced, at home**
 
-    Build **PocketLedger** — a full-stack personal finance tracker — using every Bob skill you've learned: `/init`, rules, a custom mode, and a complete GitHub issue-to-PR loop. Nobody grades it; use the built-in self-check list.
+    Build **PocketLedger** — a full-stack personal finance tracker — using every Bob skill you've learned: `/init`, rules, a custom mode, and a complete GitHub issue-to-PR loop.
+
+    [:octicons-arrow-right-24: Take the Challenge](labs/challenge.md)
 
 </div>
-
-!!! info "Labs will be available during the lecture"
 
 ---
 

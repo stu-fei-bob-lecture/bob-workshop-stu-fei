@@ -17,15 +17,7 @@ Register for the IBM Bob trial (**50 Bobcoins for 30 days**) using the **same IB
 IBM Bob is a **standalone IDE** — not a VS Code extension. Download from [bob.ibm.com/download](https://bob.ibm.com/download) and sign in with your IBMid.
 
 === "IBM Bob IDE (recommended)"
-    Download the installer for your OS from **[bob.ibm.com/download](https://bob.ibm.com/download)**:
-
-    | OS | Installer |
-    |---|---|
-    | macOS (Apple Silicon) | `.pkg` — mac-ARM |
-    | macOS (Intel) | `.pkg` — mac-intel |
-    | Windows | `.exe` |
-    | Linux (Debian/Ubuntu) | `.deb` |
-    | Linux (Red Hat/Fedora) | `.rpm` |
+    Download the installer for your OS from **[bob.ibm.com/download](https://bob.ibm.com/download)**.
 
     Run the installer, follow the wizard, then sign in with your **IBMid** on first launch.
 
@@ -46,6 +38,11 @@ IBM Bob is a **standalone IDE** — not a VS Code extension. Download from [bob.
 
 - **[Node.js](https://nodejs.org) 20 LTS** and **[Python](https://www.python.org/downloads/) 3.11+** installed
 - **[Git](https://git-scm.com/downloads)** configured with `user.name` and `user.email`
+- The GitHub repository cloned together with the Galaxium Travels project (included as a submodule):
+
+    ```bash
+    git clone --recurse-submodules https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
+    ```
 
 ---
 
@@ -54,6 +51,7 @@ IBM Bob is a **standalone IDE** — not a VS Code extension. Download from [bob.
 - [ ] IBMid created, IBM Bob installed and signed in
 - [ ] `node`, `python3` and `git` work in the terminal
 - [ ] Git `user.name` and `user.email` configured
+- [ ] Repository cloned, `galaxium-travels/` folder is not empty
 
 ---
 

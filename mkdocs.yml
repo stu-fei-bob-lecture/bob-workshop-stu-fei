@@ -85,11 +85,14 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei
 
-# Labs are hidden until the lecture. To publish them, remove `exclude_docs`
-# and restore the Beginner / Intermediate / Expert / Challenge entries in `nav`.
-exclude_docs: |
-  labs/
-
 nav:
   - Home: index.md
   - Setup: setup.md
+  - 🟢 Beginner:
+    - labs/beginner.md
+  - 🟡 Intermediate:
+    - labs/intermediate.md
+  - 🔴 Expert:
+    - labs/expert.md
+  - 🏆 Challenge:
+    - labs/challenge.md

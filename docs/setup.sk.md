@@ -17,15 +17,7 @@ Zaregistrujte sa na skúšobnú verziu IBM Bob (**50 Bobcoinov na 30 dní**) pom
 IBM Bob je **samostatné IDE** — nie rozšírenie pre VS Code. Stiahnite si ho z [bob.ibm.com/download](https://bob.ibm.com/download) a pri prvom spustení sa prihláste pomocou svojho IBMid.
 
 === "IBM Bob IDE (odporúčané)"
-    Stiahnite si inštalátor pre váš operačný systém z **[bob.ibm.com/download](https://bob.ibm.com/download)**:
-
-    | OS | Inštalátor |
-    |---|---|
-    | macOS (Apple Silicon) | `.pkg` — mac-ARM |
-    | macOS (Intel) | `.pkg` — mac-intel |
-    | Windows | `.exe` |
-    | Linux (Debian/Ubuntu) | `.deb` |
-    | Linux (Red Hat/Fedora) | `.rpm` |
+    Stiahnite si inštalátor pre váš operačný systém z **[bob.ibm.com/download](https://bob.ibm.com/download)**.
 
     Spustite inštalátor, postupujte podľa sprievodcu a pri prvom spustení sa prihláste pomocou **IBMid**.
 
@@ -46,6 +38,11 @@ IBM Bob je **samostatné IDE** — nie rozšírenie pre VS Code. Stiahnite si ho
 
 - Nainštalovaný **[Node.js](https://nodejs.org) 20 LTS** a **[Python](https://www.python.org/downloads/) 3.11+**
 - Nakonfigurovaný **[Git](https://git-scm.com/downloads)** (`user.name` a `user.email`)
+- Naklonovaný repozitár z GitHubu spolu s projektom Galaxium Travels (je súčasťou repozitára ako submodul):
+
+    ```bash
+    git clone --recurse-submodules https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
+    ```
 
 ---
 
@@ -54,6 +51,7 @@ IBM Bob je **samostatné IDE** — nie rozšírenie pre VS Code. Stiahnite si ho
 - [ ] IBMid vytvorené, IBM Bob nainštalovaný a prihlásený
 - [ ] `node`, `python3` a `git` fungujú v termináli
 - [ ] Git `user.name` a `user.email` nastavené
+- [ ] Repozitár naklonovaný, priečinok `galaxium-travels/` nie je prázdny
 
 ---
 
