@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/</loc>
-         <lastmod>2026-11-12</lastmod>
+        <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/"/>
+        <xhtml:link rel="alternate" hreflang="sk" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/sk/"/>
     </url>
     <url>
-         <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/labs/openslava-beginner/</loc>
-         <lastmod>2026-11-12</lastmod>
+        <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/setup/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/setup/"/>
+        <xhtml:link rel="alternate" hreflang="sk" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/sk/setup/"/>
     </url>
     <url>
-         <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/labs/openslava-challenge/</loc>
-         <lastmod>2026-11-12</lastmod>
+        <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/sk/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="sk" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/sk/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/"/>
     </url>
     <url>
-         <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/labs/openslava-expert/</loc>
-         <lastmod>2026-11-12</lastmod>
-    </url>
-    <url>
-         <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/labs/openslava-intermediate/</loc>
-         <lastmod>2026-11-12</lastmod>
+        <loc>https://potapov-dmytro.github.io/bob-workshop-stu-fei/sk/setup/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="sk" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/sk/setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://potapov-dmytro.github.io/bob-workshop-stu-fei/setup/"/>
     </url>
 </urlset>
