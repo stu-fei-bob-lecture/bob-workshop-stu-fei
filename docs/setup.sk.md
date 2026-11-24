@@ -37,7 +37,7 @@ IBM Bob je **samostatné IDE** — nie rozšírenie pre VS Code. Stiahnite si ho
 ## 4 — Ďalšie požiadavky
 
 - Nainštalovaný **[Node.js](https://nodejs.org) 20 LTS** a **[Python](https://www.python.org/downloads/) 3.11+**
-- Nakonfigurovaný **[Git](https://git-scm.com/downloads)** (`user.name` a `user.email`)
+- Nainštalovaný **[Git](https://git-scm.com/downloads)**
 - Naklonovaný repozitár z GitHubu spolu s projektom Galaxium Travels (je súčasťou repozitára ako submodul):
 
     ```bash
@@ -50,7 +50,6 @@ IBM Bob je **samostatné IDE** — nie rozšírenie pre VS Code. Stiahnite si ho
 
 - [ ] IBMid vytvorené, IBM Bob nainštalovaný a prihlásený
 - [ ] `node`, `python3` a `git` fungujú v termináli
-- [ ] Git `user.name` a `user.email` nastavené
 - [ ] Repozitár naklonovaný, priečinok `galaxium-travels/` nie je prázdny
 
 ---
