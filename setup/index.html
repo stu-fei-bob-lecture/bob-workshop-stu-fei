@@ -1247,8 +1247,8 @@ Authenticate at <code>bob.ibm.com/login</code> when prompted.<p></p>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">OpenJS</span><span class="p">.</span><span class="n">NodeJS</span><span class="p">.</span><span class="n">LTS</span> <span class="n">-e</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Python</span><span class="p">.</span><span class="n">Python</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">12</span> <span class="n">-e</span>
 </code></pre></div>
-<p>Then <strong>close and reopen the terminal</strong> so the new <code>PATH</code> is picked up. On Windows Python is started with <code>python</code> (or <code>py</code>), not <code>python3</code>.</p>
-<p>No <code>winget</code>? Download the installers from <a href="https://nodejs.org/en/download">nodejs.org</a>, <a href="https://www.python.org/downloads/windows/">python.org</a> (tick <strong>Add python.exe to PATH</strong>) and <a href="https://git-scm.com/downloads/win">git-scm.com</a>.</p>
+<p>Then <strong>close and reopen the terminal</strong> so the new <code>PATH</code> is picked up.</p>
+<p><code>winget</code> does not work? Download the installers from <a href="https://nodejs.org/en/download">nodejs.org</a>, <a href="https://www.python.org/downloads/windows/">python.org</a> (tick <strong>Add python.exe to PATH</strong>) and <a href="https://git-scm.com/downloads/win">git-scm.com</a>.</p>
 </div>
 <div class="tabbed-block">
 <p>Install <a href="https://brew.sh">Homebrew</a> first if you do not have it, then:</p>
@@ -1290,7 +1290,7 @@ Authenticate at <code>bob.ibm.com/login</code> when prompted.<p></p>
 </div>
 <p>Each command should print a version number. If you see "command not found" or "is not recognized", the installation did not finish or the terminal was not restarted — repeat the install step for that tool.</p>
 <details class="warning">
-<summary>The <code>python</code> command keeps opening the Microsoft Store (Windows)</summary>
+<summary>If the <code>python</code> command keeps opening the Microsoft Store (Windows)</summary>
 <p>Windows contains preset "aliases" that block the real Python installation. Turn them off:</p>
 <ol>
 <li>Press the <code>Win</code> key and type <strong>Manage app execution aliases</strong>.</li>
