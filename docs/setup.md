@@ -89,9 +89,9 @@ If a command is not found or the version is too old, install it:
     winget install --id Python.Python.3.12 -e
     ```
 
-    Then **close and reopen the terminal** so the new `PATH` is picked up. On Windows Python is started with `python` (or `py`), not `python3`.
+    Then **close and reopen the terminal** so the new `PATH` is picked up.
 
-    No `winget`? Download the installers from [nodejs.org](https://nodejs.org/en/download), [python.org](https://www.python.org/downloads/windows/) (tick **Add python.exe to PATH**) and [git-scm.com](https://git-scm.com/downloads/win).
+    `winget` does not work? Download the installers from [nodejs.org](https://nodejs.org/en/download), [python.org](https://www.python.org/downloads/windows/) (tick **Add python.exe to PATH**) and [git-scm.com](https://git-scm.com/downloads/win).
 
 === "macOS"
     Install [Homebrew](https://brew.sh) first if you do not have it, then:
@@ -142,7 +142,7 @@ After installing, **close the terminal and open a new one**, then check again th
 
 Each command should print a version number. If you see "command not found" or "is not recognized", the installation did not finish or the terminal was not restarted — repeat the install step for that tool.
 
-??? warning "The `python` command keeps opening the Microsoft Store (Windows)"
+??? warning "If the `python` command keeps opening the Microsoft Store (Windows)"
     Windows contains preset "aliases" that block the real Python installation. Turn them off:
 
     1. Press the `Win` key and type **Manage app execution aliases**.

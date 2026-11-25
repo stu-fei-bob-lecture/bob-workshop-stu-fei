@@ -89,9 +89,9 @@ Ak príkaz nebol nájdený alebo je verzia príliš stará, nainštalujte ho:
     winget install --id Python.Python.3.12 -e
     ```
 
-    Potom **zatvorte a znovu otvorte terminál**, aby sa načítala nová premenná `PATH`. Vo Windows sa Python spúšťa príkazom `python` (alebo `py`), nie `python3`.
+    Potom **zatvorte a znovu otvorte terminál**, aby sa načítala nová premenná `PATH`.
 
-    Nemáte `winget`? Stiahnite si inštalátory z [nodejs.org](https://nodejs.org/en/download), [python.org](https://www.python.org/downloads/windows/) (zaškrtnite **Add python.exe to PATH**) a [git-scm.com](https://git-scm.com/downloads/win).
+    Nefunguje `winget`? Stiahnite si inštalátory z [nodejs.org](https://nodejs.org/en/download), [python.org](https://www.python.org/downloads/windows/) (zaškrtnite **Add python.exe to PATH**) a [git-scm.com](https://git-scm.com/downloads/win).
 
 === "macOS"
     Ak nemáte [Homebrew](https://brew.sh), nainštalujte ho a potom spustite:
@@ -142,7 +142,7 @@ Po inštalácii **zatvorte terminál a otvorte nový**, potom znova skontrolujte
 
 Každý príkaz by mal vypísať číslo verzie. Ak sa zobrazí „command not found“ alebo „is not recognized“, inštalácia sa nedokončila alebo ste terminál nereštartovali — zopakujte inštaláciu príslušného nástroja.
 
-??? warning "Príkaz `python` stále otvára Microsoft Store (Windows)"
+??? warning "Ak príkaz `python` stále otvára Microsoft Store (Windows)"
     Windows obsahuje prednastavené „aliasy“, ktoré blokujú vlastnú inštaláciu Pythonu. Vypnite ich takto:
 
     1. Stlačte kláves `Win` a napíšte **Spravovať aliasy spúšťania aplikácií** (alebo *Manage app execution aliases*).
