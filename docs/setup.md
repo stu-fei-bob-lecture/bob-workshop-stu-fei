@@ -37,7 +37,7 @@ IBM Bob is a **standalone IDE** — not a VS Code extension. Download from [bob.
 ## 4 — Other prerequisites
 
 - **[Node.js](https://nodejs.org) 20 LTS** (or a newer LTS), **[Python](https://www.python.org/downloads/) 3.11+** and **[Git](https://git-scm.com/downloads)** installed (see below if you do not have them yet)
-- The GitHub repository cloned together with the Galaxium Travels project (see the last step below)
+- The GitHub repository cloned (see the last step below)
 
 ### How to open a terminal
 

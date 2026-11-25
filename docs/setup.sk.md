@@ -37,7 +37,7 @@ IBM Bob je **samostatné IDE** — nie rozšírenie pre VS Code. Stiahnite si ho
 ## 4 — Ďalšie požiadavky
 
 - Nainštalovaný **[Node.js](https://nodejs.org) 20 LTS** (alebo novší LTS), **[Python](https://www.python.org/downloads/) 3.11+** a **[Git](https://git-scm.com/downloads)** (ak ich ešte nemáte, pozrite nižšie)
-- Naklonovaný repozitár z GitHubu spolu s projektom Galaxium Travels (pozrite posledný krok nižšie)
+- Naklonovaný repozitár z GitHubu (pozrite posledný krok nižšie)
 
 ### Ako otvoriť terminál
 
