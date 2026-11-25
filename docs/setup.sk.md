@@ -56,11 +56,27 @@ Môžete použiť aj terminál priamo v IBM Bob: stlačte `` Ctrl+` `` (alebo v 
 
 Najprv skontrolujte, čo už máte nainštalované — v termináli spustite:
 
-```bash
-node --version    # potrebná verzia v20 alebo novšia
-python3 --version # potrebná verzia 3.11 alebo novšia (vo Windows: python --version)
-git --version
-```
+=== "Windows"
+    ```powershell
+    node --version    # potrebná verzia v20 alebo novšia
+    python --version  # potrebná verzia 3.11 alebo novšia
+    git --version
+    ```
+
+=== "macOS / Linux"
+    ```bash
+    node --version    # potrebná verzia v20 alebo novšia
+    python3 --version # potrebná verzia 3.11 alebo novšia
+    git --version
+    ```
+
+**Ako vyhodnotiť výsledok z terminálu:**
+
+| Nástroj | Vyžadovaná verzia | 🟢 OK | 🔴 Chyba |
+|---|---|---|---|
+| **Node.js** | v20+ | Vypíše napr. `v20.18.0` | Hláška *„is not recognized…“* (macOS/Linux: *„command not found“*) |
+| **Python** | v3.11+ | Vypíše napr. `Python 3.12.4` | Hláška *„is not recognized…“* alebo sa otvorí MS Store — potrebná inštalácia |
+| **Git** | verzia 2.x | Vypíše napr. `git version 2.45…` | Hláška *„is not recognized…“* (macOS/Linux: *„command not found“*) |
 
 Ak príkaz nebol nájdený alebo je verzia príliš stará, nainštalujte ho:
 
@@ -110,13 +126,35 @@ Ak príkaz nebol nájdený alebo je verzia príliš stará, nainštalujte ho:
 
 Po inštalácii **zatvorte terminál a otvorte nový**, potom znova skontrolujte, že je všetko nainštalované:
 
-```bash
-node --version    # v20 alebo novšia
-python3 --version # 3.11 alebo novšia (vo Windows: python --version)
-git --version
-```
+=== "Windows"
+    ```powershell
+    node --version    # v20 alebo novšia
+    python --version  # 3.11 alebo novšia
+    git --version
+    ```
+
+=== "macOS / Linux"
+    ```bash
+    node --version    # v20 alebo novšia
+    python3 --version # 3.11 alebo novšia
+    git --version
+    ```
 
 Každý príkaz by mal vypísať číslo verzie. Ak sa zobrazí „command not found“ alebo „is not recognized“, inštalácia sa nedokončila alebo ste terminál nereštartovali — zopakujte inštaláciu príslušného nástroja.
+
+??? warning "Príkaz `python` stále otvára Microsoft Store (Windows)"
+    Windows obsahuje prednastavené „aliasy“, ktoré blokujú vlastnú inštaláciu Pythonu. Vypnite ich takto:
+
+    1. Stlačte kláves `Win` a napíšte **Spravovať aliasy spúšťania aplikácií** (alebo *Manage app execution aliases*).
+    2. V zozname nájdite položky **Inštalátor aplikácií (python.exe)** a **python3.exe**.
+    3. Prepnite ich vypínač na pozíciu **Vypnuté (Off)**.
+    4. V PowerShelli spustite preinštalovanie natvrdo:
+
+        ```powershell
+        winget install --force Python.Python.3.12
+        ```
+
+    Potom zatvorte terminál, otvorte nový a znova spustite `python --version`.
 
 ### Naklonovanie repozitára
 

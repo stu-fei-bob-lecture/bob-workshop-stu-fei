@@ -56,11 +56,27 @@ You can also use the terminal built into IBM Bob: press `` Ctrl+` `` (or choose 
 
 First check what is already installed — run in the terminal:
 
-```bash
-node --version    # needs v20 or newer
-python3 --version # needs 3.11 or newer (on Windows: python --version)
-git --version
-```
+=== "Windows"
+    ```powershell
+    node --version    # needs v20 or newer
+    python --version  # needs 3.11 or newer
+    git --version
+    ```
+
+=== "macOS / Linux"
+    ```bash
+    node --version    # needs v20 or newer
+    python3 --version # needs 3.11 or newer
+    git --version
+    ```
+
+**How to read the terminal output:**
+
+| Tool | Required | 🟢 OK | 🔴 Error |
+|---|---|---|---|
+| **Node.js** | v20+ | Prints e.g. `v20.18.0` | Message *"is not recognized…"* (macOS/Linux: *"command not found"*) |
+| **Python** | v3.11+ | Prints e.g. `Python 3.12.4` | Message *"is not recognized…"* or the Microsoft Store opens — installation needed |
+| **Git** | version 2.x | Prints e.g. `git version 2.45…` | Message *"is not recognized…"* (macOS/Linux: *"command not found"*) |
 
 If a command is not found or the version is too old, install it:
 
@@ -110,13 +126,35 @@ If a command is not found or the version is too old, install it:
 
 After installing, **close the terminal and open a new one**, then check again that everything is installed:
 
-```bash
-node --version    # v20 or newer
-python3 --version # 3.11 or newer (on Windows: python --version)
-git --version
-```
+=== "Windows"
+    ```powershell
+    node --version    # v20 or newer
+    python --version  # 3.11 or newer
+    git --version
+    ```
+
+=== "macOS / Linux"
+    ```bash
+    node --version    # v20 or newer
+    python3 --version # 3.11 or newer
+    git --version
+    ```
 
 Each command should print a version number. If you see "command not found" or "is not recognized", the installation did not finish or the terminal was not restarted — repeat the install step for that tool.
+
+??? warning "The `python` command keeps opening the Microsoft Store (Windows)"
+    Windows contains preset "aliases" that block the real Python installation. Turn them off:
+
+    1. Press the `Win` key and type **Manage app execution aliases**.
+    2. In the list find **App Installer (python.exe)** and **python3.exe**.
+    3. Switch both toggles to **Off**.
+    4. In PowerShell, reinstall Python:
+
+        ```powershell
+        winget install --force Python.Python.3.12
+        ```
+
+    Then close the terminal, open a new one and run `python --version` again.
 
 ### Clone the repository
 
