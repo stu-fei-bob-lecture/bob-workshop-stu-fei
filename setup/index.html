@@ -1191,37 +1191,80 @@ Authenticate at <code>bob.ibm.com/login</code> when prompted.<p></p>
 <p>You can also use the terminal built into IBM Bob: press <code>Ctrl+`</code> (or choose <strong>Terminal → New Terminal</strong> from the menu).</p>
 <h3 id="install-nodejs-python-and-git-skip-what-you-already-have">Install Node.js, Python and Git (skip what you already have)<a class="headerlink" href="#install-nodejs-python-and-git-skip-what-you-already-have" title="Permanent link">¶</a></h3>
 <p>First check what is already installed — run in the terminal:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>node<span class="w"> </span>--version<span class="w">    </span><span class="c1"># needs v20 or newer</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>--version<span class="w"> </span><span class="c1"># needs 3.11 or newer (on Windows: python --version)</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>git<span class="w"> </span>--version
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Windows</label><label for="__tabbed_3_2">macOS / Linux</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">node</span> <span class="p">-</span><span class="n">-version</span>    <span class="c"># needs v20 or newer</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">python</span> <span class="p">-</span><span class="n">-version</span>  <span class="c"># needs 3.11 or newer</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">git</span> <span class="p">-</span><span class="n">-version</span>
 </code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>node<span class="w"> </span>--version<span class="w">    </span><span class="c1"># needs v20 or newer</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python3<span class="w"> </span>--version<span class="w"> </span><span class="c1"># needs 3.11 or newer</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>git<span class="w"> </span>--version
+</code></pre></div>
+</div>
+</div>
+</div>
+<p><strong>How to read the terminal output:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Required</th>
+<th>🟢 OK</th>
+<th>🔴 Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Node.js</strong></td>
+<td>v20+</td>
+<td>Prints e.g. <code>v20.18.0</code></td>
+<td>Message <em>"is not recognized…"</em> (macOS/Linux: <em>"command not found"</em>)</td>
+</tr>
+<tr>
+<td><strong>Python</strong></td>
+<td>v3.11+</td>
+<td>Prints e.g. <code>Python 3.12.4</code></td>
+<td>Message <em>"is not recognized…"</em> or the Microsoft Store opens — installation needed</td>
+</tr>
+<tr>
+<td><strong>Git</strong></td>
+<td>version 2.x</td>
+<td>Prints e.g. <code>git version 2.45…</code></td>
+<td>Message <em>"is not recognized…"</em> (macOS/Linux: <em>"command not found"</em>)</td>
+</tr>
+</tbody>
+</table>
 <p>If a command is not found or the version is too old, install it:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><input id="__tabbed_3_3" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Windows</label><label for="__tabbed_3_2">macOS</label><label for="__tabbed_3_3">Linux (Debian / Ubuntu)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><input id="__tabbed_4_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Windows</label><label for="__tabbed_4_2">macOS</label><label for="__tabbed_4_3">Linux (Debian / Ubuntu)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Open <strong>PowerShell</strong> and use <code>winget</code> (included in Windows 10/11):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Git</span><span class="p">.</span><span class="n">Git</span> <span class="n">-e</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">OpenJS</span><span class="p">.</span><span class="n">NodeJS</span><span class="p">.</span><span class="n">LTS</span> <span class="n">-e</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Python</span><span class="p">.</span><span class="n">Python</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">12</span> <span class="n">-e</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Git</span><span class="p">.</span><span class="n">Git</span> <span class="n">-e</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">OpenJS</span><span class="p">.</span><span class="n">NodeJS</span><span class="p">.</span><span class="n">LTS</span> <span class="n">-e</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Python</span><span class="p">.</span><span class="n">Python</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">12</span> <span class="n">-e</span>
 </code></pre></div>
 <p>Then <strong>close and reopen the terminal</strong> so the new <code>PATH</code> is picked up. On Windows Python is started with <code>python</code> (or <code>py</code>), not <code>python3</code>.</p>
 <p>No <code>winget</code>? Download the installers from <a href="https://nodejs.org/en/download">nodejs.org</a>, <a href="https://www.python.org/downloads/windows/">python.org</a> (tick <strong>Add python.exe to PATH</strong>) and <a href="https://git-scm.com/downloads/win">git-scm.com</a>.</p>
 </div>
 <div class="tabbed-block">
 <p>Install <a href="https://brew.sh">Homebrew</a> first if you do not have it, then:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>brew<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>node<span class="w"> </span>python@3.12
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>brew<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>node<span class="w"> </span>python@3.12
 </code></pre></div>
 <p>Alternatively, download the installers from <a href="https://nodejs.org/en/download">nodejs.org</a>, <a href="https://www.python.org/downloads/">python.org</a> and <a href="https://git-scm.com/downloads">git-scm.com</a>.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>git<span class="w"> </span>python3<span class="w"> </span>python3-pip<span class="w"> </span>python3-venv<span class="w"> </span>curl
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>git<span class="w"> </span>python3<span class="w"> </span>python3-pip<span class="w"> </span>python3-venv<span class="w"> </span>curl
 </code></pre></div>
 <p>The Node.js in the default <code>apt</code> repositories is usually too old, so install it with <a href="https://github.com/nvm-sh/nvm">nvm</a>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span>-o-<span class="w"> </span>https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>-o-<span class="w"> </span>https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </code></pre></div>
 <p>Restart the terminal, then:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>nvm<span class="w"> </span>install<span class="w"> </span>--lts
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>nvm<span class="w"> </span>install<span class="w"> </span>--lts
 </code></pre></div>
 <p>If <code>python3 --version</code> is older than 3.11, install a newer one (for example <code>sudo apt install python3.12 python3.12-venv</code>) or use your distribution's documentation.</p>
 </div>
@@ -1229,31 +1272,58 @@ Authenticate at <code>bob.ibm.com/login</code> when prompted.<p></p>
 </div>
 <h3 id="verify-the-installation">Verify the installation<a class="headerlink" href="#verify-the-installation" title="Permanent link">¶</a></h3>
 <p>After installing, <strong>close the terminal and open a new one</strong>, then check again that everything is installed:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>node<span class="w"> </span>--version<span class="w">    </span><span class="c1"># v20 or newer</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>python3<span class="w"> </span>--version<span class="w"> </span><span class="c1"># 3.11 or newer (on Windows: python --version)</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>git<span class="w"> </span>--version
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">Windows</label><label for="__tabbed_5_2">macOS / Linux</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">node</span> <span class="p">-</span><span class="n">-version</span>    <span class="c"># v20 or newer</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">python</span> <span class="p">-</span><span class="n">-version</span>  <span class="c"># 3.11 or newer</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">git</span> <span class="p">-</span><span class="n">-version</span>
 </code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>node<span class="w"> </span>--version<span class="w">    </span><span class="c1"># v20 or newer</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>python3<span class="w"> </span>--version<span class="w"> </span><span class="c1"># 3.11 or newer</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>git<span class="w"> </span>--version
+</code></pre></div>
+</div>
+</div>
+</div>
 <p>Each command should print a version number. If you see "command not found" or "is not recognized", the installation did not finish or the terminal was not restarted — repeat the install step for that tool.</p>
+<details class="warning">
+<summary>The <code>python</code> command keeps opening the Microsoft Store (Windows)</summary>
+<p>Windows contains preset "aliases" that block the real Python installation. Turn them off:</p>
+<ol>
+<li>Press the <code>Win</code> key and type <strong>Manage app execution aliases</strong>.</li>
+<li>In the list find <strong>App Installer (python.exe)</strong> and <strong>python3.exe</strong>.</li>
+<li>Switch both toggles to <strong>Off</strong>.</li>
+<li>
+<p>In PowerShell, reinstall Python:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-force</span> <span class="n">Python</span><span class="p">.</span><span class="n">Python</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">12</span>
+</code></pre></div>
+</li>
+</ol>
+<p>Then close the terminal, open a new one and run <code>python --version</code> again.</p>
+</details>
 <h3 id="clone-the-repository">Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permanent link">¶</a></h3>
 <p>Clone the repository into your <strong>Documents</strong> folder:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><input id="__tabbed_4_3" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Windows</label><label for="__tabbed_4_2">macOS</label><label for="__tabbed_4_3">Linux</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><input id="__tabbed_6_3" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Windows</label><label for="__tabbed_6_2">macOS</label><label for="__tabbed_6_3">Linux</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>In PowerShell:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">cd </span><span class="nv">$HOME</span><span class="p">\</span><span class="n">Documents</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">git</span> <span class="n">clone</span> <span class="p">-</span><span class="n">-recurse-submodules</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">stu-fei-bob-lecture</span><span class="p">/</span><span class="n">bob-workshop-stu-fei</span><span class="p">.</span><span class="n">git</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">cd </span><span class="nv">$HOME</span><span class="p">\</span><span class="n">Documents</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">git</span> <span class="n">clone</span> <span class="p">-</span><span class="n">-recurse-submodules</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">stu-fei-bob-lecture</span><span class="p">/</span><span class="n">bob-workshop-stu-fei</span><span class="p">.</span><span class="n">git</span>
 </code></pre></div>
 <p>The project will be in <code>C:\Users\&lt;your-name&gt;\Documents\bob-workshop-stu-fei</code>.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>~/Documents
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">cd</span><span class="w"> </span>~/Documents
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
 </code></pre></div>
 <p>The project will be in <code>/Users/&lt;your-name&gt;/Documents/bob-workshop-stu-fei</code>.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">cd</span><span class="w"> </span>~/Documents
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">cd</span><span class="w"> </span>~/Documents
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>https://github.com/stu-fei-bob-lecture/bob-workshop-stu-fei.git
 </code></pre></div>
 <p>The project will be in <code>/home/&lt;your-name&gt;/Documents/bob-workshop-stu-fei</code>. If you have no <code>Documents</code> folder, create it first with <code>mkdir -p ~/Documents</code>.</p>
 </div>
